@@ -29,6 +29,7 @@
 
         }
     </style>
+    <!--função criada para ser executada ao clicar no botão "Enviar"-->
     <script>
         function envia() {
             alert("Contato Enviado!");
@@ -50,27 +51,36 @@
                     <h4 class="lead text-uppercase.text-white-50 mb-4">Análise e Desenvolvimento de Sistemas</h4>
                 </div>
                 <h6>Preencha abaixo com seus dados</h6>
+                <!--abrindo formulário-->
                 <form>
                     <div>
+                        <!--label para o campo "Nome"-->
                         <label for="nome">Nome:</label>
+                        <!--quebra de linha-->
                         <br>
+                        <!--input com os tipos a serem inseridos-->
                         <input type="text" id="nome" />
                     </div>
                     <div>
+                        <!--label para o campo "E-mail"-->
                         <label for="email">E-mail:</label>
                         <br>
                         <input type="email" id="email" />
                     </div>
                     <div>
+                        <!--label para o campo "Mensagem"-->
                         <label for="msg">Mensagem:</label>
                         <br>
+                        <!--textarea recebendo um id "msg"-->
                         <textarea id="msg"></textarea>
                     </div>
                     <div>
+                        <!--botão chamando a função "envia" criada no head do html-->
                         <input type="button" onclick="envia()" value="Enviar"/>
                     </div>
                 </form>
                 <h5>
+                    <!--a href criado para retornar a página inicial do portfólio-->
                     <a href="index.html">Voltar</a>
                 </h5>
             </div>
